@@ -110,29 +110,16 @@
         .form-container {
             background: rgba(26, 17, 0, 0.8);
             border-radius: 15px;
-            padding: 40px;
-            max-width: 500px;
+            padding: 20px;
+            max-width: 520px;
             width: 100%;
             box-shadow: 0 0 30px rgba(255, 136, 0, 0.2);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 136, 0, 0.3);
             animation: pulse 3s infinite alternate;
-        }
-
-        .emoji-light {
-            font-size: 64px;
-            text-align: center;
-            margin-bottom: 20px;
-            animation: glow 2s infinite alternate;
-        }
-
-        @keyframes glow {
-            from {
-                text-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
-            }
-            to {
-                text-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
-            }
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         @keyframes pulse {
@@ -142,67 +129,6 @@
             to {
                 box-shadow: 0 0 50px rgba(255, 215, 0, 0.4);
             }
-        }
-
-        h1 {
-            text-align: center;
-            font-weight: 800;
-            margin-bottom: 30px;
-            font-size: 28px;
-            background: linear-gradient(to right, var(--primary), var(--secondary));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 500;
-            color: var(--light);
-        }
-
-        input, textarea, select {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid rgba(255, 136, 0, 0.3);
-            border-radius: 6px;
-            background-color: rgba(26, 17, 0, 0.3);
-            color: var(--light);
-            font-family: 'Inter', sans-serif;
-            transition: border-color 0.3s, box-shadow 0.3s;
-        }
-
-        input:focus, textarea:focus, select:focus {
-            outline: none;
-            border-color: var(--primary);
-            box-shadow: 0 0 0 2px rgba(255, 136, 0, 0.2);
-        }
-
-        button {
-            padding: 12px 24px;
-            background: linear-gradient(to right, var(--primary), var(--secondary));
-            border: none;
-            border-radius: 6px;
-            color: var(--dark);
-            font-weight: 600;
-            cursor: pointer;
-            transition: transform 0.3s, box-shadow 0.3s;
-            align-self: center;
-            margin-top: 10px;
-        }
-
-        button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(255, 136, 0, 0.4);
         }
 
         .piercing-effect {
