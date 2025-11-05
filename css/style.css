@@ -108,18 +108,20 @@
         }
 
         .form-container {
-            background: rgba(26, 17, 0, 0.8);
+            background: #FFFFFF;
             border-radius: 15px;
             padding: 20px;
             max-width: 520px;
             width: 100%;
-            box-shadow: 0 0 30px rgba(255, 136, 0, 0.2);
-            backdrop-filter: blur(10px);
+            box-shadow: 0 0 50px rgba(255, 215, 0, 0.4);
             border: 1px solid rgba(255, 136, 0, 0.3);
             animation: pulse 3s infinite alternate;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        }
+
+        #substack-embed {
+            width: 100%;
+            height: 320px;
+            border: none;
         }
 
         @keyframes pulse {
