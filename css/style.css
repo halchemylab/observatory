@@ -174,11 +174,43 @@
             }
             
             .form-container {
-                padding: 20px;
+                padding: 30px;
             }
             
-            h1 {
+            .form-container h1 {
                 font-size: 24px;
+            }
+
+            .form-container p {
+                font-size: 14px;
+            }
+
+            .logo-text {
+                font-size: 18px;
+            }
+
+            .logo-icon {
+                width: 35px;
+                height: 35px;
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .form-container {
+                padding: 20px;
+            }
+
+            .form-container h1 {
+                font-size: 22px;
+            }
+
+            .form-container p {
+                font-size: 13px;
+            }
+
+            .logo-text {
+                display: none;
             }
         }
 
